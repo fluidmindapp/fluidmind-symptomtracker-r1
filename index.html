@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FluidMind</title>
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66KG5M3ZSP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-66KG5M3ZSP');
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            // Determine the device's operating system based on the user agent
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Redirect based on whether the device is iOS or Android
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/app/fluidmind/id6503635625";
+            } else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.euthymiatechnologies.fluidmind";
+            } else {
+                // Optionally handle other devices or provide a default redirection
+                window.location.href = "https://euthymiatechnologies.com/what-is-fluidmind";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <p>If you are not redirected, <a href="https://euthymiatechnologies.com">click here</a> to visit my website</p> -->
+</body>
+</html>
